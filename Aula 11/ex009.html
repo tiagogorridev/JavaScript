@@ -22,13 +22,11 @@
             var local = document.querySelector('div#local')
             var pais = String(txtp.value)
 
-            local.innerHTML = `<p>Seu país de origem é: <strong>${pais}</strong>, que maravilha!</p>`
+            local.innerHTML = `<p>Seu país de origem é: <strong>${pais}</strong>, que maravilha!</p>` 
 
-            if (pais = Brasil) {
+            if (pais == 'Brasil') {
                 local.innerHTML += `<p>Você é brasileiro.</p>`
-            }
-
-            else {
+            } else {
                 local.innerHTML += `<p>Você não é brasileiro.</p>`
             }
         }
